@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mascotas",
+  "info": {
+    "singularName": "mascota",
+    "pluralName": "mascotas",
+    "displayName": "mascota",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "string",
+      "required": true,
+      "default": "edad desconocida"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "perro",
+        "gato",
+        "otro"
+      ],
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gender": {
+      "type": "boolean",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "default": "No hay descripción de esta mascota"
+    }
+  }
+}
