@@ -38,9 +38,10 @@
         "images"
       ]
     },
-    "gender": {
+    "male": {
       "type": "boolean",
-      "required": true
+      "required": true,
+      "default": true
     },
     "description": {
       "type": "richtext",
