@@ -1,3 +1,5 @@
+
+// se importan variables de ambiente para correr el servidor
 module.exports = ({ env }) => ({
     upload: {
     config:{

@@ -1,6 +1,7 @@
 module.exports = [
   'strapi::errors',
   {
+    // configuración del cloudinary
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
